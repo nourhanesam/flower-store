@@ -31,8 +31,6 @@ hr{
     max-width: 1450px;
     margin: auto;
     align-items: center;
-    column-gap: 20px;
-    row-gap: 100px;
 }
 .container .item img{
     width: 100%;
@@ -44,30 +42,34 @@ hr{
 .container .item{
 display: flex;
 flex-direction: column;
-margin: 30px;
+margin: 19px 25px;
 padding-bottom: 20px ;
 background-color: #fff9f9;
 border-radius: 20px;
 width: 350px;
-height: 400px;
+border: 2px solid #c2185b;
+box-shadow: 3px 1px 13px 0px #a07e8b;
+}
+.item div{
+  padding:0 15px;
 }
 .container .item i{
     color: #c2185b;
-    padding: 8px 2px;
+    padding: 8px 2px 3px;
 }
 .container .item .text {
     width: 300px;
 }
 .container .item .text h2{
     color: #c2185b;
-    padding: 4px 2px;
+    padding: 3px 2px;
 }
 .container .item .text p{
     font-size: 16px;
     color: #000;
     word-spacing: 2px;
     font-weight: 50;
-    padding: 6px 2px;
+    padding: 4px 2px;
 }
 .container .item  button{
     outline: none;
@@ -117,4 +119,65 @@ height: 400px;
 .item p {
   animation-delay: 0.6s;
 }
+/* موبايل */
+@media (max-width:481px){
+ *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    h1 {
+    text-align: center;
+    margin: 20px auto 4px;
+    color: #c2185b;
+    font-size: 35px;
+    font-weight: bold;  
+    overflow-x: hidden;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    width: 100%;
+  }
+ .container .item img {
+    width: 100%;
+    height: 260px;
+} 
+.container .item{
+  width: 80%;
+  margin:25px auto;
 
+}
+.container .item .product{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .item button{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+}
+@media (min-width:766px) and (max-width:992px){
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .container .item {
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+    padding-bottom: 20px;
+    width: 90%;
+    height: 534px;
+}
+}
