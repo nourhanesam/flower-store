@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+font-family: "PT Serif", serif;
+caret-color: #d08690;
+}
+h1{
+    text-align: center;
+    margin: 20px 0 10px;
+    color: #c2185b;
+    font-size: 45px;
+    font-weight: bold;
+}
+hr{
+       width: 150px;
+    height: 3px;
+    background-image: linear-gradient(to right, #ddd, #c2185b);
+    outline: none;
+    border: none;
+    margin: 2px auto;
+}
+.container{
+    display: grid;
+ grid-template-columns: repeat(3, 1fr);
+    max-width: 1450px;
+    margin: auto;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 100px;
+}
+.container .item img{
+    width: 100%;
+    border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     height: 350px;
+
+}
+.container .item{
+display: flex;
+flex-direction: column;
+margin: 30px;
+padding-bottom: 20px ;
+background-color: #fff9f9;
+border-radius: 20px;
+width: 350px;
+height: 400px;
+}
+.container .item i{
+    color: #c2185b;
+    padding: 8px 2px;
+}
+.container .item .text {
+    width: 300px;
+}
+.container .item .text h2{
+    color: #c2185b;
+    padding: 4px 2px;
+}
+.container .item .text p{
+    font-size: 16px;
+    color: #000;
+    word-spacing: 2px;
+    font-weight: 50;
+    padding: 6px 2px;
+}
+.container .item  button{
+    outline: none;
+    margin: 6px 0;
+    padding: 6px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #c2185b;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.container .item  button:hover,
+.container .item  button:hover i{
+  color: #c2185b;
+  background-color: transparent;
+  transform: scale(1.2);
+}
+.container .item  button i{
+    color: #fff;
+}
+.container .item span{
+    color: #c2185b;
+    font-size: 23px;
+    font-weight: 800;
+    padding: 9px;
+}
+.item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.item img {
+  animation-delay: 0.2s;
+}
+.item h3 {
+  animation-delay: 0.4s;
+}
+.item p {
+  animation-delay: 0.6s;
+}
+

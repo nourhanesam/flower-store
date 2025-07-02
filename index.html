@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORAZI</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="log.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/lotus.png" type="image/x-icon">
+    <!-- fontoswem -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="hlog">
+        <div class="box">
+            <form class="inn">
+                <h1>Sign in</h1>
+                <label for="inname">User Name</label>
+                <input type="text" id="inname" placeholder="Enter Your Name" required>
+                <label for="inpass">Password</label>
+                <input type="password" id="inpass" placeholder="Enter Your Password" required>
+                <label>
+                    <input type="checkbox" name="remember" id="incheck" required>Remember Me</label>
+                <button type="button" class="btn" id="signin"> Sign in</button>
+                <h2>Don't Have an Account? <a id="upone" href="#">Sign Up</a></h2>
+                <div class="social">
+                    <h3>Or Sign In With</h3>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                </div>
+
+            </form>
+            <form id="up" class="hide">
+                <h1>Sign Up</h1>
+                <label for="upname">User Name</label>
+                <input type="text" id="upname" placeholder="Enter Your Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Your email" required>
+                <label for="uppass">Password</label>
+                <input type="password" id="uppass" placeholder="Enter Your Password" required>
+                <label class="check">
+                    <input id="upcheck" type="checkbox" name="accept" required>I Agree To The Terms and Condition</label>
+                <button class="btn" type="button" id="signup">Sign Up</button>
+                <h3>Already Have An Account? <a id="inone" href="#">Sign In</a></h3>
+            </form>
+        </div>
+    </div>
+    <script src="log.js"></script>
+</body>
+
+</html>

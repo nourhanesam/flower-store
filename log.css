@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+font-family: "PT Serif", serif;
+caret-color: #d08690;
+
+}
+:root{
+--white: rgb(240 237 234);
+--pink:#c22929;
+}
+.hide{
+  display: none !important;
+  transition-duration: 1s;
+}
+.hlog{
+    background-image: url("./img/ChatGPT Image Jun 28, 2025, 01_48_24 AM.png");
+    background-position: center center ;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    background-color:  rgb(240 237 234);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px -2px 20px 5px #c64347;
+      color:#c64347; 
+}
+.box .inn h1{
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom:30px ;
+  text-align: center;
+}
+.inn{
+  display: flex;
+  flex-direction: column;
+
+
+
+}
+.inn label{
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom:5px ;
+  padding-right: 3px;
+}
+.inn input{
+ padding: 5px;
+ color:#c22929 ;
+ outline: none;
+ border: none;
+ margin-bottom: 10px;
+ margin-right: 5px;
+ accent-color: #c64347;
+
+}
+input::placeholder{
+  color: #cba6a6;
+  font-size: 12px;
+}
+.inn .btn{
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  outline: none;
+border-radius: 20px;
+background-image: linear-gradient(to right, #efe1e1, #c64347);
+border: none;
+color: #fff;
+cursor: pointer;
+font-size: 17px;
+font-weight: 500;
+transition: 0.3s ease;
+width: 100%;
+text-decoration: none;
+}
+
+.inn button:hover{
+  transform: scale(1.1);
+}
+.inn h2{
+  font-size: 15px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.inn h2 a {
+    text-decoration: none;
+    color: #ff69b4;
+}
+.inn .social{
+  text-align: center;
+}
+.inn .social h3{
+  font-size: 14px;
+  font-weight: 500;
+  color: #c64347;
+  margin: 5px;
+}
+.inn .social i{
+  margin-right: 7px;
+  padding: 10px;
+  border-radius:50% ;
+  background-color: #c64347;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: 0.2s ease;
+}
+.inn .social i:hover{
+  background-color: #fff;
+  color: #c64347;
+}
+/* up */
+#up{
+  display: flex;
+  flex-direction: column;
+}
+#up h1{
+  text-align: center;
+  margin-bottom: 15px;
+}
+#up label{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom:5px ;
+  padding-right: 3px;
+}
+#up input{
+ padding: 5px;
+ color:#c22929 ;
+ outline: none;
+ border: none;
+ margin-bottom: 13px;
+ margin-right: 5px;
+ accent-color: #c64347;
+
+}
+#up .btn{
+  display: inline-block;
+  padding: 5px;
+  outline: none;
+border-radius: 20px;
+background-image: linear-gradient(to right, #efe1e1, #c64347);
+border: none;
+color: #fff;
+cursor: pointer;
+font-size: 17px;
+font-weight: 500;
+margin: 10px auto;
+transition: all 0.3s ease;
+width: 100%;
+text-align: center;
+
+}
+
+#up button:hover{
+  transform: scale(1.1);
+}
+#up .check{
+  font-size: 13px;
+}
+#up h3{
+ font-size: 13px;
+ font-weight: 600;
+ text-align: center;
+ margin: 7px;
+}
+#up a{
+  text-decoration: none;
+  color: #ff69b4;
+}
+
