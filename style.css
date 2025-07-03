@@ -21,7 +21,7 @@ h1{
   display: none;
 }
 .success-message{
-  padding: 8px 15px;
+  padding: 0px 15px;
 }
 hr{
        width: 150px;
@@ -68,7 +68,7 @@ opacity: 0.9;
   opacity: 1;
 }
 .item div{
-  padding:0 15px;
+  padding:0 12px;
 }
 .container .item i{
     color: #c2185b;
@@ -79,18 +79,18 @@ opacity: 0.9;
 }
 .container .item .text h2{
     color: #c2185b;
-    padding: 3px 2px;
+    padding: 3px 2px 2px;
 }
 .container .item .text p{
     font-size: 16px;
     color: #000;
     word-spacing: 2px;
     font-weight: 50;
-    padding: 4px 2px;
+    padding: 4px 2px 2px;
 }
 .container .item  button{
     outline: none;
-    margin: 6px 0;
+    margin: 6px 0 ;
     padding: 6px 15px;
     font-size: 16px;
     font-weight: 500;
@@ -180,6 +180,6 @@ h1 {
     margin: 25px auto;
     padding-bottom: 20px;
     width: 90%;
-    height: 534px;
+    height: 545px;
 }
 }
