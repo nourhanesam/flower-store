@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AOS Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 300px;
+      height: 200px;
+      margin: 100px auto;
+      background: pink;
+      text-align: center;
+      line-height: 200px;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    .spacer {
+      height: 800px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="spacer"></div>
+
+  <div class="box" data-aos="zoom-in">Box 1</div>
+  <div class="box" data-aos="fade-left">Box 2</div>
+  <div class="box" data-aos="flip-up">Box 3</div>
+  <div class="box" data-aos="fade-up" data-aos-delay="500">Box 4</div>
+
+  <div class="spacer"></div>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>

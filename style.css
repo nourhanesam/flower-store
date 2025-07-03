@@ -17,6 +17,12 @@ h1{
     font-size: 45px;
     font-weight: bold;
 }
+.hide{
+  display: none;
+}
+.success-message{
+  padding: 8px 15px;
+}
 hr{
        width: 150px;
     height: 3px;
@@ -49,6 +55,17 @@ border-radius: 20px;
 width: 350px;
 border: 2px solid #c2185b;
 box-shadow: 3px 1px 13px 0px #a07e8b;
+  transition: all 0.3s ease-in-out;
+opacity: 0.9;
+
+}
+
+.container .item img{
+  opacity: 0.95;
+  transition: transform 0.3s ease, opacity 0.3s ease
+}
+.container .item img:hover{
+  opacity: 1;
 }
 .item div{
   padding:0 15px;
@@ -98,27 +115,12 @@ box-shadow: 3px 1px 13px 0px #a07e8b;
     font-weight: 800;
     padding: 9px;
 }
-.item {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
+.item:hover {
+ transform: scale(1.05) translateY(-10px) translateZ(0) !important;
+  box-shadow:0px 5px 20px 8px rgb(224 154 154 / 60%);
+
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.item img {
-  animation-delay: 0.2s;
-}
-.item h3 {
-  animation-delay: 0.4s;
-}
-.item p {
-  animation-delay: 0.6s;
-}
 /* موبايل */
 @media (max-width:481px){
  *{
@@ -127,12 +129,12 @@ box-shadow: 3px 1px 13px 0px #a07e8b;
         padding: 0;
         overflow-x: hidden;
     }
-    h1 {
+h1 {
     text-align: center;
-    margin: 20px auto 4px;
+    margin: 20px auto 6px;
     color: #c2185b;
-    font-size: 35px;
-    font-weight: bold;  
+    font-size: 29px;
+    font-weight: bold;
     overflow-x: hidden;
 }
 .container {

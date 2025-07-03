@@ -13,15 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <header id="home">
         <div class="navbar">
             <nav>
-                <div class="logo">
+                <a href="#home" class="logo">
                     <img src="./img/lotus.png">
                     <h2>FLORAZI</h2>
-                </div>
+                </a>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -126,25 +128,25 @@
             <hr>
             <div class="occasion-container">
                 <a href="love.html" class="item">
-                    <img src="./img/love.jpg" alt="Valentine's Day">
+                    <img data-aos="flip-left" data-aos-duration="2000" src="./img/love.jpg" alt="Valentine's Day">
                     <h3>Valentine's Day</h3>
                 </a>
                 <a href="birth.html"  class="item">
-                    <img src="./img/birth1.jpg" alt="Birthday">
+                    <img  data-aos="flip-left" data-aos-duration="2000"  src="./img/birth1.jpg" alt="Birthday">
                     <h3>Birthday</h3>
                 </a>
                 <a href="mom.html" class="item">
-                    <img src="./img/mom.jpg" alt="Mother's Day">
+                    <img  data-aos="flip-left" data-aos-duration="2000"  src="./img/mom.jpg" alt="Mother's Day">
                     <h3>Mother's Day</h3>
                 </a>
 
                 <a href="wedding.html" class="item">
-                    <img src="./img/wedding.jpg" alt="Wedding / Engagement">
+                    <img  data-aos="flip-left" data-aos-duration="2000"  src="./img/wedding.jpg" alt="Wedding / Engagement">
                     <h3>Wedding/Engagement</h3>
                 </a>
 
                 <a href="grad.html" class="item">
-                    <img src="./img/grad.jpg" alt="Graduation">
+                    <img  data-aos="flip-left" data-aos-duration="2000"  src="./img/grad.jpg" alt="Graduation">
                     <h3>Graduation</h3>
                 </a>
         </section>
@@ -264,6 +266,11 @@
 <hr>
         <div class="fdown"> <p>Copyright &copy; 2025 <span>Florazi</span> . All rights reserved.</p></div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>
